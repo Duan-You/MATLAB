@@ -67,6 +67,7 @@ function [bmp_compression]=BMPCompression(bmp_data)
     bmp_compression{1}.data_dec=data_dec;
     bmp_compression{1}.compression_data=compression_data;
     bmp_compression{1}.bmp_data=bmp_data;
+    bmp_compression{1}.bfSize=numel(data);
     
     % 写文件
     fid = fopen("my.mybmp", 'w+');
